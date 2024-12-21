@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "FacultyStudentPortal_backend": {
+      "main": "src/FacultyStudentPortal_backend/main.mo",
+      "type": "motoko"
+    },
+    "FacultyStudentPortal_frontend": {
+      "dependencies": [
+        "FacultyStudentPortal_backend"
+      ],
+      "source": [
+        "src/FacultyStudentPortal_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "FacultyStudentPortal_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
